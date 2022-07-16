@@ -2,10 +2,10 @@ import React from 'react';
 import { useSelector } from 'react-redux'
 
 const CounterDiv = () => {
-  const state = useSelector((state) => state.counterReducer.counterNumber)
+  const CounterNumber = useSelector((state) => state.counterReducer.counterNumber)
   return (
     <div>
-      <h1>Counter : {state}</h1>
+      <h1>Counter : {CounterNumber}</h1>
     </div>
   );
 };
